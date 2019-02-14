@@ -3,7 +3,7 @@
 
 A dockerized deep-learning model for image segmentation of light, electron and X-ray microscopy, based on CDeep3M
 
-Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target="_">CDeep3M</a>!
+Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target="_blank">CDeep3M</a>!
 
 ## Quickstart
 
@@ -62,4 +62,4 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
 
 ## Who are we?
 
-DDeep3M is proposed and maintained by researchers from  <a href="http://www.wtu.edu.cn" target="_">WTU</a> and <a href="http://www.wnlo.cn/"  target="_">HUST</a>.
+DDeep3M is proposed and maintained by researchers from  <a href="http://www.wtu.edu.cn" target="_blank">WTU</a> and <a href="http://www.wnlo.cn/"  target="_blank">HUST</a>.
