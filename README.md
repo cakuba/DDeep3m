@@ -30,7 +30,7 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
    ddeep3m                 latest              1dc19b05aa93        24 hours ago        4.4GB
 ```
 
-**NOTE: 
+**NOTE:**
 
 (1) depending on the bandwidth of network connection, the building process might take up to ~30 mins. So a little patience is appreciated.
 
