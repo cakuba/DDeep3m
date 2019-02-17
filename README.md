@@ -1,3 +1,4 @@
+[license]: https://github.com/cakuba/DDeep3m/blob/master/LICENSE
 
 # DDeep3m
 
@@ -63,3 +64,7 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
 ## Who are we?
 
 DDeep3M is proposed and maintained by researchers from  <a href="http://www.wtu.edu.cn" target="_blank">WTU</a> and <a href="http://www.wnlo.cn/"  target="_blank">HUST</a>.
+
+## License
+
+See [LICENSE][license] for DDeep3M
