@@ -50,6 +50,12 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
 ```Bash
    cd /usr/local/src/cdeep3m-1.6.2
 ```
+2. obtain the MOST sample data
+```Bash
+   wget 'https://1drv.ms/u/s!Av8_YAWBQpg7enAkjXEdJ8mw37Q'
+   unzip ddeep3m_most_dataset.zip
+```
+
 2. pre-process the training data of SOMA with augmentation
 ```Bash
    ./PreprocessTrainingData.m ./most/soma/train/images ./most/soma/train/labels ./soma_augmented/ 
