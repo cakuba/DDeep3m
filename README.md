@@ -1,4 +1,6 @@
 [license]: https://github.com/cakuba/DDeep3m/blob/master/LICENSE
+[soma]: https://1drv.ms/u/s!Av8_YAWBQpg7eZMDQ0OMwGG3qTk
+[vessel]: https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo
 
 # DDeep3m
 
@@ -78,7 +80,7 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
  ```Bash
    wget 'https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo'
 ```  
-   or directly to download the model weight from <a herf="https://1drv.ms/u/s!Av8_YAWBQpg7eZMDQ0OMwGG3qTk">here</a> and <a herf="https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo">here</a>.
+   or directly to download the model weight from [here][soma] and [here][vessel].
 
 3. untar the model weight file
 ```Bash
