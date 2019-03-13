@@ -1,6 +1,7 @@
 [license]: https://github.com/cakuba/DDeep3m/blob/master/LICENSE
 [soma]: https://1drv.ms/u/s!Av8_YAWBQpg7eZMDQ0OMwGG3qTk
 [vessel]: https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo
+[imod]: https://github.com/CRBS/cdeep3m/wiki/Tutorial-1-Generating-training-data-with-IMOD
 
 # DDeep3m
 
@@ -99,6 +100,49 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
    ./runprediction.sh ./model/most_soma_30k ./most/soma/test/images ./soma_predictout/ 
 ``` 
 
+## To use your own data
+
+In case you want to use DDeep3M with your own dataset, here are the steps you might want to follow:
+
+1. organize the directory of your own dataset as 
+```Bash
+   data/
+       train/
+            images/
+                  x001.png
+                  x002.png
+                  ...
+            labels/
+                  x001.png
+                  x002.png
+                  ...
+      valid/
+            images/
+                  x001.png
+                  x002.png
+                  ...
+            labels/
+                  x001.png
+                  x002.png
+                  ...           
+```
+
+2. for image stack, use either ImageJ to generate a sequence of images with PNG format, or use IMOD program to extract  images continously with "mrc2tif" command as suggested [here][imod]:
+```Bash
+   mkdir -p train/images
+   mkdir train/labels
+
+   mrc2tif -p train.tif train/images/x
+   mrc2tif -p labels.tif train/labels/x
+``` 
+
+3. to train the model with your own data
+```Bash
+   cd /usr/local/src/cdeep3m-1.6.2
+   ./PreprocessTrainingData.m ./data/train/images ./data/train/labels ./augmented/ 
+   ./runtraining.sh --numiterations 10 ./augmented/ ./trainout 
+``` 
+
 ## Who are we?
 
 DDeep3M is proposed and maintained by researchers from  <a href="http://www.wtu.edu.cn" target="_blank">WTU</a> and <a href="http://www.wnlo.cn/"  target="_blank">HUST</a>.
@@ -106,3 +150,4 @@ DDeep3M is proposed and maintained by researchers from  <a href="http://www.wtu.
 ## License
 
 See [LICENSE][license] for DDeep3M
+
