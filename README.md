@@ -1,11 +1,12 @@
 [license]: https://github.com/cakuba/DDeep3m/blob/master/LICENSE
 [soma]: https://1drv.ms/u/s!Av8_YAWBQpg7eZMDQ0OMwGG3qTk
 [vessel]: https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo
+[tumors]: https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo
 [imod]: https://github.com/CRBS/cdeep3m/wiki/Tutorial-1-Generating-training-data-with-IMOD
 
 # DDeep3m
 
-A dockerized deep-learning model for image segmentation of MOST dataset, based on CDeep3M
+A dockerized deep-learning model for image segmentation of MOST/BraTS dataset, based on CDeep3M
 
 Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target="_blank">CDeep3M</a>!
 
@@ -79,15 +80,19 @@ Thanks for the great work from <a href="https://github.com/CRBS/cdeep3m" target=
    cd model
 ```
 
-2. obtain the pre-trained model weight trained for SOMA
+2. obtain the pre-trained model weight trained for SOMA in MOST
 ```Bash
    wget 'https://1drv.ms/u/s!Av8_YAWBQpg7eZMDQ0OMwGG3qTk'
 ``` 
-   or the model weight trained for VESSEL
- ```Bash
+   or the model weight trained for VESSEL in MOST
+```Bash
    wget 'https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo'
 ```  
-   or directly to download the model weight from [here][soma] and [here][vessel].
+   or the model weight trained for brain tumors in BraTS19
+ ```Bash
+   wget 'https://1drv.ms/u/s!Av8_YAWBQpg7ePVrPZeUSB7RmPo'
+```    
+   or directly to download the model weight for [soma][soma], [vessel][vessel] and [brain tumors][tumors].
 
 3. untar the model weight file
 ```Bash
@@ -145,7 +150,7 @@ In case you want to use DDeep3M with your own dataset, here are the steps you mi
 
 ## Who are we?
 
-DDeep3M is proposed and maintained by researchers from  <a href="http://www.wtu.edu.cn" target="_blank">WTU</a> and <a href="http://www.wnlo.cn/"  target="_blank">HUST</a>.
+DDeep3M is proposed and maintained by researchers from  <a herf="https://www.wit.edu.cn/" target="_blank">WIT</a>/<a href="http://www.wtu.edu.cn" target="_blank">WTU</a> and <a href="http://www.wnlo.cn/"  target="_blank">HUST</a>.
 
 ## License
 
